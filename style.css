@@ -4,10 +4,10 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 100px 2fr 1fr;
+    grid-template-columns: repeat(auto-fill, 100px);
     grid-template-rows: 100px 100px;
     /* 縦方向の余白, 横方向の余白 */
-    gap: 20px 40px;
+    /* gap: 20px 40px; */
 }
 
 .box1 {
