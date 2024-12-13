@@ -4,15 +4,15 @@ body {
 
 .container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: 50px 100px;
-    /* 縦方向の余白, 横方向の余白 */
-    /* gap: 20px 40px; */
+    grid-template-columns: 100px 100px [target-start] 100px [target-end];
+    grid-template-rows: 100px 100px;
 }
 
 .box1 {
     background: hsl(0, 60%, 60%);
+    /* target-start, target-end */
+    grid-column: target;
+    grid-row: 2;
 }
 
 .box2 {
